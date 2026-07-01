@@ -78,7 +78,7 @@
                         <i class="fa-solid fa-robot text-sm"></i>
                     </div>
                     <div class="bg-stone-100 text-stone-800 p-3.5 rounded-2xl rounded-tl-none text-sm">
-                        Fight On! I am your team's engineering advisor bot. Paste your API key above, then ask me anything about our field.
+                        Fight On! I am your team's chatbot. Paste your API key above, then ask me anything about engineering fields.
                     </div>
                 </div>
             </div>
@@ -115,11 +115,11 @@ Electrical Engineering at USC Viterbi. You explain concepts like bridges, water 
 infrastructure, sustainable buildings, pacemakers, prosthetics, medical sensors, and digital 
 circuits in a way middle school students can understand. You can also explain the different subfields 
 of civil engineering and the difference between engineering and architecture. You are high-energy 
-and scientific but never talk down to people. Think hard about each answer. Don't say something that isn't
-true. Encourage everyone to continue learning about engineering. Focus on how engineering saves 
-lives, both medically and structurally. Keep answers short; don't overstate, but if you do, make
-it simple. Use at least one fun analogy in each response. End every response with a fun engineering pun,
-a silly joke, and the message: Fight On!`
+and scientific but never talk down to people. Think hard about each answer. Don't say something that cannot be 
+supported with facts. Encourage everyone to continue learning about engineering. Focus on how engineering saves 
+lives, both medically and structurally. Keep answers short; try not to overstate, but if you do, make
+it simple. Use at least one fun analogy in each response. End every response with a fun engineering pun, a follow-up 
+question, and the message: Fight On!`
         };
         // ==========================
         // END OF EDITABLE SECTION
@@ -163,7 +163,7 @@ a silly joke, and the message: Fight On!`
             appendMessage(userText, 'user');
             inputField.value = '';
 
-            const loadingId = appendMessage('Thinking...', 'loading');
+            const loadingId = appendMessage('Designing a response...', 'loading');
 
             try {
                 const response = await fetch(
